@@ -34,10 +34,6 @@ html {
   background-image: url('../objects/tmb/carpet.png');
 }
 
-#globe-obj {
-  background-image: url('../objects/tmb/globe.png');
-}
-
 #parquet-txt {
   background-image: url('../objects/textures/parquet.jpg');
 }
@@ -59,13 +55,13 @@ html {
 }
 
 #grey-txt {
-  background-color: rgb(130, 130, 130, 1);
+  background-color: rgb(107, 107, 107);
 }
 #brown-txt {
-  background-color: rgb(100, 60, 60, 1);
+  background-color: rgb(91, 62, 62);
 }
 #custom-txt {
-  background-color: rgb(240, 250, 130, 1);
+  background-color: rgb(242, 249, 170);
 }
 #custom-txt-overlay {
   margin: -50.4% 0px;

@@ -39,12 +39,6 @@ class Plant extends ColliderObject {
     super(Mesh.loadFromOBJFile('plant'), materials.texture.plant, "plant.png");
   }
 }
-class Globe extends ColliderObject {
-  constructor() {
-    super(Mesh.loadFromOBJFile('globe'), materials.texture.globe, "globe.png");
-  }
-
-}
 
 /*************************************
 ******* SELF COLLIDER OBJECTS ********

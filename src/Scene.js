@@ -36,8 +36,7 @@ var Scene = {
 				wengeWood: new TextureMaterial("wenge_wood_b.jpg"),
 				whiteFabric: new TextureMaterial("white_fabric.jpg"),
 				plant: new TextureMaterial("plant.jpg"),
-				carpet: new TextureMaterial("carpet.jpg"),
-				globe: new TextureMaterial("globe_main.png").setSpecularColor(255, 255, 150, 1).setSpecularShine(50)
+				carpet: new TextureMaterial("carpet.jpg")
 			},
 			blackLeather: new SpecularMaterial(30, 30, 30, 1),
 			lamp: new Material(250, 250, 250, 1).setEmissionColor(220, 220, 220, 0.9),
@@ -54,7 +53,7 @@ var Scene = {
 
 	preload: function() {
 		const roomObjs = ['floor', 'walls_lightmap', 'chandelier/chandelierWhite', 'chandelier/chandelierSteel', 'chandelier/chandelierWood'];
-		const objs = ['table', 'chair', 'sofa', 'tvtable', 'plant', 'globe', 'carpet', 'lamp/lampSteel', 'lamp/lampWhite'];
+		const objs = ['table', 'chair', 'sofa', 'tvtable', 'plant', 'carpet', 'lamp/lampSteel', 'lamp/lampWhite'];
 		var roomPromise = this.prefetchOBJs(roomObjs);
 		// On floor and walls loaded:
 		Promise.all(roomPromise).then(results => {

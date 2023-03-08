@@ -170,9 +170,7 @@ var Input =
                 case "carpet-obj":
                 obj = new Carpet();
                 break;
-                case "globe-obj":
-                obj = new Globe();
-                break;
+
                 default:
                 return;
             }
