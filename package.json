@@ -1,5 +1,5 @@
 {
-  "name": "blueprint3d",
+  "name": "room3d",
   "version": "0.0.1",
   "description": "",
   "main": "main.js",
@@ -18,7 +18,7 @@
     "browserify": "^8.0.2"
   },
   "scripts": {
-    "build": "browserify src/blueprint3d.js > example/js/blueprint3d.js --verbose"
+    "build": "browserify src/room3d.js > docs/js/room3d.js --verbose"
   },
   "author": "",
   "license": ""
