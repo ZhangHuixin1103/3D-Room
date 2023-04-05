@@ -2,7 +2,7 @@ var ThreeMain = require('./three/three_main.js');
 var Model = require('./model/model.js');
 var Floorplanner = require('./floorplanner/floorplanner');
 
-global.room3d = function(opts) {
+global.Blueprint3d = function(opts) {
   // opts.threeElement
   // opts.floorplannerElement
   // opts.textureDir
