@@ -3,7 +3,7 @@
  * Camera Buttons
  */
 
-var CameraButtons = function (room3d) {
+var CameraButtons = function(room3d) {
 
   var orbitControls = room3d.three.controls;
   var three = room3d.three;
@@ -19,22 +19,22 @@ var CameraButtons = function (room3d) {
   function init() {
     // Camera controls
     $("#zoom-in").click(zoomIn);
-    $("#zoom-out").click(zoomOut);
+    $("#zoom-out").click(zoomOut);  
     $("#zoom-in").dblclick(preventDefault);
     $("#zoom-out").dblclick(preventDefault);
 
     $("#reset-view").click(three.centerCamera)
 
-    $("#move-left").click(function () {
+    $("#move-left").click(function(){
       pan(directions.LEFT)
     })
-    $("#move-right").click(function () {
+    $("#move-right").click(function(){
       pan(directions.RIGHT)
     })
-    $("#move-up").click(function () {
+    $("#move-up").click(function(){
       pan(directions.UP)
     })
-    $("#move-down").click(function () {
+    $("#move-down").click(function(){
       pan(directions.DOWN)
     })
 
@@ -83,17 +83,17 @@ var CameraButtons = function (room3d) {
 
 /*
  * Context menu for selected item
- */
+ */ 
 
-var ContextMenu = function (room3d) {
+var ContextMenu = function(room3d) {
 
   var scope = this;
   var selectedItem;
   var three = room3d.three;
 
   function init() {
-    $("#context-menu-delete").click(function (event) {
-      selectedItem.remove();
+    $("#context-menu-delete").click(function(event) {
+        selectedItem.remove();
     });
 
     three.itemSelectedCallbacks.add(itemSelected);
@@ -101,9 +101,9 @@ var ContextMenu = function (room3d) {
 
     initResize();
 
-    $("#fixed").click(function () {
-      var checked = $(this).prop('checked');
-      selectedItem.setFixed(checked);
+    $("#fixed").click(function() {
+        var checked = $(this).prop('checked');
+        selectedItem.setFixed(checked);
     });
   }
 
@@ -155,13 +155,13 @@ var ContextMenu = function (room3d) {
  * Loading modal for items
  */
 
-var ModalEffects = function (room3d) {
+var ModalEffects = function(room3d) {
 
   var scope = this;
   var room3d = room3d;
   var itemsLoading = 0;
 
-  this.setActiveItem = function (active) {
+  this.setActiveItem = function(active) {
     itemSelected = active;
     update();
   }
@@ -175,15 +175,15 @@ var ModalEffects = function (room3d) {
   }
 
   function init() {
-    room3d.model.scene.itemLoadingCallbacks.add(function () {
+    room3d.model.scene.itemLoadingCallbacks.add(function() {
       itemsLoading += 1;
       update();
     });
 
-    room3d.model.scene.itemLoadedCallbacks.add(function () {
+     room3d.model.scene.itemLoadedCallbacks.add(function() {
       itemsLoading -= 1;
       update();
-    });
+    });   
 
     update();
   }
@@ -195,7 +195,7 @@ var ModalEffects = function (room3d) {
  * Side menu
  */
 
-var SideMenu = function (room3d, floorplanControls, modalEffects) {
+var SideMenu = function(room3d, floorplanControls, modalEffects) {
   var room3d = room3d;
   var floorplanControls = floorplanControls;
   var modalEffects = modalEffects;
@@ -203,26 +203,26 @@ var SideMenu = function (room3d, floorplanControls, modalEffects) {
   var ACTIVE_CLASS = "active";
 
   var tabs = {
-    "FLOORPLAN": $("#floorplan_tab"),
-    "SHOP": $("#items_tab"),
-    "DESIGN": $("#design_tab")
+    "FLOORPLAN" : $("#floorplan_tab"),
+    "SHOP" : $("#items_tab"),
+    "DESIGN" : $("#design_tab")
   }
 
   var scope = this;
   this.stateChangeCallbacks = $.Callbacks();
 
   this.states = {
-    "DEFAULT": {
-      "div": $("#viewer"),
-      "tab": tabs.DESIGN
+    "DEFAULT" : {
+      "div" : $("#viewer"),
+      "tab" : tabs.DESIGN
     },
-    "FLOORPLAN": {
-      "div": $("#floorplanner"),
-      "tab": tabs.FLOORPLAN
+    "FLOORPLAN" : {
+      "div" : $("#floorplanner"),
+      "tab" : tabs.FLOORPLAN
     },
-    "SHOP": {
-      "div": $("#add-items"),
-      "tab": tabs.SHOP
+    "SHOP" : {
+      "div" : $("#add-items"),
+      "tab" : tabs.SHOP
     }
   }
 
@@ -252,7 +252,7 @@ var SideMenu = function (room3d, floorplanControls, modalEffects) {
   }
 
   function tabClicked(tab) {
-    return function () {
+    return function() {
       // Stop three from spinning
       room3d.three.stopSpin();
 
@@ -266,7 +266,7 @@ var SideMenu = function (room3d, floorplanControls, modalEffects) {
       }
     }
   }
-
+  
   function setCurrentState(newState) {
 
     if (currentState == newState) {
@@ -276,7 +276,7 @@ var SideMenu = function (room3d, floorplanControls, modalEffects) {
     // show the right tab as active
     if (currentState.tab !== newState.tab) {
       if (currentState.tab != null) {
-        currentState.tab.removeClass(ACTIVE_CLASS);
+        currentState.tab.removeClass(ACTIVE_CLASS);          
       }
       if (newState.tab != null) {
         newState.tab.addClass(ACTIVE_CLASS);
@@ -294,7 +294,7 @@ var SideMenu = function (room3d, floorplanControls, modalEffects) {
     if (newState == scope.states.FLOORPLAN) {
       floorplanControls.updateFloorplanView();
       floorplanControls.handleWindowResize();
-    }
+    } 
 
     if (currentState == scope.states.FLOORPLAN) {
       room3d.model.floorplan.update();
@@ -303,16 +303,16 @@ var SideMenu = function (room3d, floorplanControls, modalEffects) {
     if (newState == scope.states.DEFAULT) {
       room3d.three.updateWindowSize();
     }
-
+ 
     // set new state
-    handleWindowResize();
+    handleWindowResize();    
     currentState = newState;
 
     scope.stateChangeCallbacks.fire(newState);
   }
 
   function initLeftMenu() {
-    $(window).resize(handleWindowResize);
+    $( window ).resize( handleWindowResize );
     handleWindowResize();
   }
 
@@ -324,7 +324,7 @@ var SideMenu = function (room3d, floorplanControls, modalEffects) {
 
   // TODO: this doesn't really belong here
   function initItems() {
-    $("#add-items").find(".add-item").mousedown(function (e) {
+    $("#add-items").find(".add-item").mousedown(function(e) {
       var modelUrl = $(this).attr("model-url");
       var itemType = parseInt($(this).attr("model-type"));
       var metadata = {
@@ -356,7 +356,7 @@ var TextureSelector = function (room3d, sideMenu) {
   var currentTarget = null;
 
   function initTextureSelectors() {
-    $(".texture-select-thumbnail").click(function (e) {
+    $(".texture-select-thumbnail").click(function(e) {
       var textureUrl = $(this).attr("texture-url");
       var textureStretch = ($(this).attr("texture-stretch") == "true");
       var textureScale = parseInt($(this).attr("texture-scale"));
@@ -377,19 +377,19 @@ var TextureSelector = function (room3d, sideMenu) {
 
   function wallClicked(halfEdge) {
     currentTarget = halfEdge;
-    $("#floorTexturesDiv").hide();
-    $("#wallTextures").show();
+    $("#floorTexturesDiv").hide();  
+    $("#wallTextures").show();  
   }
 
   function floorClicked(room) {
     currentTarget = room;
-    $("#wallTextures").hide();
-    $("#floorTexturesDiv").show();
+    $("#wallTextures").hide();  
+    $("#floorTexturesDiv").show();  
   }
 
   function reset() {
-    $("#wallTextures").hide();
-    $("#floorTexturesDiv").hide();
+    $("#wallTextures").hide();  
+    $("#floorTexturesDiv").hide();  
   }
 
   init();
@@ -399,7 +399,7 @@ var TextureSelector = function (room3d, sideMenu) {
  * Floorplanner controls
  */
 
-var ViewerFloorplanner = function (room3d) {
+var ViewerFloorplanner = function(room3d) {
 
   var canvasWrapper = '#floorplanner';
 
@@ -416,20 +416,20 @@ var ViewerFloorplanner = function (room3d) {
 
   function init() {
 
-    $(window).resize(scope.handleWindowResize);
+    $( window ).resize( scope.handleWindowResize );
     scope.handleWindowResize();
 
     // mode buttons
-    scope.floorplanner.modeResetCallbacks.add(function (mode) {
+    scope.floorplanner.modeResetCallbacks.add(function(mode) {
       $(draw).removeClass(activeStlye);
       $(remove).removeClass(activeStlye);
       $(move).removeClass(activeStlye);
       if (mode == scope.floorplanner.modes.MOVE) {
-        $(move).addClass(activeStlye);
+          $(move).addClass(activeStlye);
       } else if (mode == scope.floorplanner.modes.DRAW) {
-        $(draw).addClass(activeStlye);
+          $(draw).addClass(activeStlye);
       } else if (mode == scope.floorplanner.modes.DELETE) {
-        $(remove).addClass(activeStlye);
+          $(remove).addClass(activeStlye);
       }
 
       if (mode == scope.floorplanner.modes.DRAW) {
@@ -440,32 +440,32 @@ var ViewerFloorplanner = function (room3d) {
       }
     });
 
-    $(move).click(function () {
+    $(move).click(function(){
       scope.floorplanner.setMode(scope.floorplanner.modes.MOVE);
     });
 
-    $(draw).click(function () {
+    $(draw).click(function(){
       scope.floorplanner.setMode(scope.floorplanner.modes.DRAW);
     });
 
-    $(remove).click(function () {
+    $(remove).click(function(){
       scope.floorplanner.setMode(scope.floorplanner.modes.DELETE);
     });
   }
 
-  this.updateFloorplanView = function () {
+  this.updateFloorplanView = function() {
     scope.floorplanner.reset();
   }
 
-  this.handleWindowResize = function () {
+  this.handleWindowResize = function() {
     $(canvasWrapper).height(window.innerHeight - $(canvasWrapper).offset().top);
     scope.floorplanner.resizeView();
   };
 
   init();
-};
+}; 
 
-var mainControls = function (room3d) {
+var mainControls = function(room3d) {
   var room3d = room3d;
 
   function newDesign() {
@@ -474,10 +474,10 @@ var mainControls = function (room3d) {
 
   function loadDesign() {
     files = $("#loadFile").get(0).files;
-    var reader = new FileReader();
-    reader.onload = function (event) {
-      var data = event.target.result;
-      room3d.model.loadSerialized(data);
+    var reader  = new FileReader();
+    reader.onload = function(event) {
+        var data = event.target.result;
+        room3d.model.loadSerialized(data);
     }
     reader.readAsText(files[0]);
   }
@@ -485,7 +485,7 @@ var mainControls = function (room3d) {
   function saveDesign() {
     var data = room3d.model.exportSerialized();
     var a = window.document.createElement('a');
-    var blob = new Blob([data], { type: 'text' });
+    var blob = new Blob([data], {type : 'text'});
     a.href = window.URL.createObjectURL(blob);
     a.download = 'design.room3d';
     document.body.appendChild(a)
@@ -506,7 +506,7 @@ var mainControls = function (room3d) {
  * Initialize!
  */
 
-$(document).ready(function () {
+$(document).ready(function() {
 
   // main setup
   var opts = {
@@ -522,7 +522,7 @@ $(document).ready(function () {
   var viewerFloorplanner = new ViewerFloorplanner(room3d);
   var contextMenu = new ContextMenu(room3d);
   var sideMenu = new SideMenu(room3d, viewerFloorplanner, modalEffects);
-  var textureSelector = new TextureSelector(room3d, sideMenu);
+  var textureSelector = new TextureSelector(room3d, sideMenu);        
   var cameraButtons = new CameraButtons(room3d);
   mainControls(room3d);
 
