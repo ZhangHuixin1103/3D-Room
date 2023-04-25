@@ -141,7 +141,7 @@ $(document).ready(function() {
       "type" : "1"
     },
     {
-      "name" : "Blue Rug",
+      "name" : "Rug",
       "image" : "models/thumbnails/thumbnail_cb-blue-block60x96.png",
       "model" : "models/js/cb-blue-block-60x96.js",
       "type" : "8"
