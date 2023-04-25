@@ -105,16 +105,16 @@ $(document).ready(function () {
             "type": "1"
         },
         {
-            "name": "Rug",
-            "image": "models/thumbnails/thumbnail_cb-blue-block60x96.png",
-            "model": "models/js/cb-blue-block-60x96.js",
-            "type": "8"
-        },
-        {
             "name": "NYC Poster",
             "image": "models/thumbnails/thumbnail_nyc2.jpg",
             "model": "models/js/nyc-poster2.js",
             "type": "2"
+        },
+        {
+            "name": "Rug",
+            "image": "models/thumbnails/thumbnail_cb-blue-block60x96.png",
+            "model": "models/js/cb-blue-block-60x96.js",
+            "type": "8"
         }
         /*     
         {
