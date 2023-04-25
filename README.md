@@ -2,4 +2,4 @@
 
 WebGL-based 3D room planner designed for project PlanNXT
 
-🔗 [Demo](https://zhanghuixin1103.github.io/3D-Room/)
+🔗 [Demo](https://zhanghuixin1103.github.io/test/)
