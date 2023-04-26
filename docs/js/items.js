@@ -99,13 +99,13 @@ $(document).ready(function () {
             "type": "1"
         },
         {
-            "name": "Meeting table",
+            "name": "Meeting Table",
             "image": "models/thumbnails/thumbnail_Screen_Shot_2014-01-28_at_6.49.33_PM.png",
             "model": "models/js/BlakeAvenuejoshuatreecheftable.js",
             "type": "1"
         },
         {
-            "name": "NYC Poster",
+            "name": "Poster",
             "image": "models/thumbnails/thumbnail_nyc2.jpg",
             "model": "models/js/nyc-poster2.js",
             "type": "2"
@@ -116,7 +116,7 @@ $(document).ready(function () {
             "model": "models/js/cb-blue-block-60x96.js",
             "type": "8"
         }
-        /*     
+        /*
         {
            "name" : "",
            "image" : "",
