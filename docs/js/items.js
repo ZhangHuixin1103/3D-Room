@@ -135,6 +135,12 @@ $(document).ready(function () {
             "type": "1"
         },
         {
+            "name": "Cube",
+            "image": "models/thumbnails/podium.png",
+            "model": "models/json/cube.json",
+            "type": "1"
+        },
+        {
             "name": "Rug",
             "image": "models/thumbnails/thumbnail_cb-blue-block60x96.png",
             "model": "models/js/cb-blue-block-60x96.js",
