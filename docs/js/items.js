@@ -111,6 +111,30 @@ $(document).ready(function () {
             "type": "2"
         },
         {
+            "name": "Man",
+            "image": "models/thumbnails/man.png",
+            "model": "models/json/man.json",
+            "type": "1"
+        },
+        {
+            "name": "Woman",
+            "image": "models/thumbnails/woman.png",
+            "model": "models/json/woman.json",
+            "type": "1"
+        },
+        {
+            "name": "Camera",
+            "image": "models/thumbnails/camera.png",
+            "model": "models/json/camera.json",
+            "type": "1"
+        },
+        {
+            "name": "Podium",
+            "image": "models/thumbnails/podium.png",
+            "model": "models/json/podium.json",
+            "type": "1"
+        },
+        {
             "name": "Rug",
             "image": "models/thumbnails/thumbnail_cb-blue-block60x96.png",
             "model": "models/js/cb-blue-block-60x96.js",
@@ -122,7 +146,7 @@ $(document).ready(function () {
            "image" : "",
            "model" : "",
            "type" : "1"
-         }, 
+         },
          */
     ]
 
