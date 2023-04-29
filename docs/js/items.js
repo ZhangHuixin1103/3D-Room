@@ -113,27 +113,52 @@ $(document).ready(function () {
         {
             "name": "Man",
             "image": "models/thumbnails/man.png",
-            "model": "models/json/man.json",
+            "model": "models/json/man.js",
             "type": "1"
         },
         {
             "name": "Woman",
             "image": "models/thumbnails/woman.png",
-            "model": "models/json/woman.json",
+            "model": "models/json/woman.js",
             "type": "1"
         },
         {
             "name": "Camera",
             "image": "models/thumbnails/camera.png",
-            "model": "models/json/camera.json",
+            "model": "models/json/camera.js",
             "type": "1"
         },
         {
             "name": "Podium",
             "image": "models/thumbnails/podium.png",
-            "model": "models/json/podium.json",
+            "model": "models/json/podium.js",
             "type": "1"
         },
+        {
+            "name": "Array of Chairs (8)",
+            "image": "models/thumbnails/arr8.png",
+            "model": "models/json/arr8.json",
+            "type": "1"
+        },
+        {
+            "name": "Array of Chairs (14)",
+            "image": "models/thumbnails/arr14.png",
+            "model": "models/json/arr14.json",
+            "type": "1"
+        },
+        /*        {
+                   "name" : "",
+                   "image" : "models/thumbnails/",
+                   "model" : "",
+                   "type" : "1"
+                 },
+                {
+                   "name" : "",
+                   "image" : "models/thumbnails/",
+                   "model" : "",
+                   "type" : "1"
+                 },
+        */
         {
             "name": "Rug",
             "image": "models/thumbnails/thumbnail_cb-blue-block60x96.png",
