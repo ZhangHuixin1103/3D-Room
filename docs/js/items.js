@@ -136,7 +136,7 @@ $(document).ready(function () {
         },
         {
             "name": "Cube",
-            "image": "models/thumbnails/podium.png",
+            "image": "models/thumbnails/cube.png",
             "model": "models/json/cube.json",
             "type": "1"
         },
