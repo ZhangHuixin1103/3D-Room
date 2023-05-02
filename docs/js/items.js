@@ -125,7 +125,7 @@ $(document).ready(function () {
         {
             "name": "Camera",
             "image": "models/thumbnails/camera.png",
-            "model": "models/json/test'.json",
+            "model": "models/json/camera.json",
             "type": "1"
         },
         {
@@ -137,7 +137,7 @@ $(document).ready(function () {
         {
             "name": "Array of Chairs (8)",
             "image": "models/thumbnails/arr8.png",
-            "model": "models/json/test.json",
+            "model": "models/json/arr8.json",
             "type": "1"
         },
         {
