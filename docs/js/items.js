@@ -125,7 +125,7 @@ $(document).ready(function () {
         {
             "name": "Camera",
             "image": "models/thumbnails/camera.png",
-            "model": "models/json/camera.json",
+            "model": "models/js/camera.js",
             "type": "1"
         },
         {
