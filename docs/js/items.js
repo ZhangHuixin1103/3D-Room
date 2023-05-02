@@ -131,7 +131,7 @@ $(document).ready(function () {
         {
             "name": "Podium",
             "image": "models/thumbnails/podium.png",
-            "model": "models/json/podium.json",
+            "model": "models/json/test.js",
             "type": "1"
         },
         {
