@@ -12,5 +12,6 @@
         "generator": "io_three",
         "faces": 4298
     },
-    "name": "seat_Plano.003Geometry"
+    "name": "seat_Plano.003Geometry",
+    "materials": [{}]
 }

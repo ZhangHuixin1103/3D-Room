@@ -149,16 +149,16 @@ $(document).ready(function () {
         /*        {
                    "name" : "",
                    "image" : "models/thumbnails/",
-                   "model" : "",
-                   "type" : "1"
-                 },
-                {
-                   "name" : "",
-                   "image" : "models/thumbnails/",
-                   "model" : "",
+                   "model" : "models/json/",
                    "type" : "1"
                  },
         */
+        {
+            "name": "Cube",
+            "image": "models/thumbnails/cube.png",
+            "model": "models/json/cube.json",
+            "type": "1"
+        },
         {
             "name": "Rug",
             "image": "models/thumbnails/thumbnail_cb-blue-block60x96.png",
