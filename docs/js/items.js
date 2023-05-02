@@ -113,13 +113,13 @@ $(document).ready(function () {
         {
             "name": "Man",
             "image": "models/thumbnails/man.png",
-            "model": "models/json/man.json",
+            "model": "models/js/man.js",
             "type": "1"
         },
         {
             "name": "Woman",
             "image": "models/thumbnails/woman.png",
-            "model": "models/json/woman.json",
+            "model": "models/js/woman.js",
             "type": "1"
         },
         {
