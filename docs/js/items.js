@@ -137,13 +137,13 @@ $(document).ready(function () {
         {
             "name": "Array of Chairs (8)",
             "image": "models/thumbnails/arr8.png",
-            "model": "models/json/arr8.json",
+            "model": "models/js/arr8.js",
             "type": "1"
         },
         {
             "name": "Array of Chairs (14)",
             "image": "models/thumbnails/arr14.png",
-            "model": "models/json/arr14.json",
+            "model": "models/js/arr14.js",
             "type": "1"
         },
         /*        {
