@@ -136,7 +136,24 @@ $(document).ready(function () {
             "model": "models/js/arr14.js",
             "type": "1"
         },
-
+        {
+            "name": "Rectangle Table Set (2)",
+            "image": "models/thumbnails/rec2.png",
+            "model": "models/js/rec2.js",
+            "type": "1"
+        },
+        {
+            "name": "Rectangle Table Set (4)",
+            "image": "models/thumbnails/rec4.png",
+            "model": "models/js/rec4.js",
+            "type": "1"
+        },
+        {
+            "name": "Rectangle Table Set (8)",
+            "image": "models/thumbnails/rec8.png",
+            "model": "models/js/rec8.js",
+            "type": "1"
+        },
         {
             "name": "Round Table Set (2)",
             "image": "models/thumbnails/rnd2.png",
@@ -185,26 +202,20 @@ $(document).ready(function () {
             "model": "models/js/poster.js",
             "type": "2"
         },
+        /*
         {
             "name": "Blue Rug",
             "image": "models/thumbnails/rug_blue.png",
             "model": "models/js/rug_blue.js",
             "type": "8"
         },
+        */
         {
             "name": "Color Rug",
             "image": "models/thumbnails/rug.png",
             "model": "models/js/rug.js",
             "type": "8"
         }
-        /*
-        {
-           "name" : "",
-           "image" : "",
-           "model" : "",
-           "type" : "1"
-         },
-         */
     ]
 
     var itemsDiv = $("#items-wrapper")
