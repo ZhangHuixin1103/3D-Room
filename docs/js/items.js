@@ -39,21 +39,9 @@ $(document).ready(function () {
             "type": "1"
         },
         {
-            "name": "Shelf",
-            "image": "models/thumbnails/shelf.png",
-            "model": "models/js/shelf.js",
-            "type": "1"
-        },
-        {
-            "name": "Storage",
-            "image": "models/thumbnails/storage.jpg",
-            "model": "models/js/storage.js",
-            "type": "1"
-        },
-        {
-            "name": "Bookshelf",
-            "image": "models/thumbnails/bookcase.jpg",
-            "model": "models/js/bookcase.js",
+            "name": "Sofa",
+            "image": "models/thumbnails/sofa.jpg",
+            "model": "models/js/sofa.js",
             "type": "1"
         },
         {
@@ -63,21 +51,35 @@ $(document).ready(function () {
             "type": "1"
         },
         {
-            "name": "Sofa",
-            "image": "models/thumbnails/sofa.jpg",
-            "model": "models/js/sofa.js",
+            "name": "Floor Lamp",
+            "image": "models/thumbnails/lamp.png",
+            "model": "models/js/lamp.js",
             "type": "1"
         },
+        {
+            "name": "Shelf",
+            "image": "models/thumbnails/shelf.png",
+            "model": "models/js/shelf.js",
+            "type": "1"
+        },
+        {
+            "name": "Bookshelf",
+            "image": "models/thumbnails/bookcase.jpg",
+            "model": "models/js/bookcase.js",
+            "type": "1"
+        },
+        /*
+        {
+            "name": "Storage",
+            "image": "models/thumbnails/storage.jpg",
+            "model": "models/js/storage.js",
+            "type": "1"
+        },
+        */
         {
             "name": "Wooden Trunk",
             "image": "models/thumbnails/trunk.jpg",
             "model": "models/js/trunk.js",
-            "type": "1"
-        },
-        {
-            "name": "Floor Lamp",
-            "image": "models/thumbnails/lamp.png",
-            "model": "models/js/lamp.js",
             "type": "1"
         },
         {
@@ -87,9 +89,9 @@ $(document).ready(function () {
             "type": "1"
         },
         {
-            "name": "Side Table",
-            "image": "models/thumbnails/table_side.png",
-            "model": "models/js/table_side.js",
+            "name": "Meeting Table",
+            "image": "models/thumbnails/table_rec.png",
+            "model": "models/js/table_rec.js",
             "type": "1"
         },
         {
@@ -99,16 +101,10 @@ $(document).ready(function () {
             "type": "1"
         },
         {
-            "name": "Meeting Table",
-            "image": "models/thumbnails/table_rec.png",
-            "model": "models/js/table_rec.js",
+            "name": "Side Table",
+            "image": "models/thumbnails/table_side.png",
+            "model": "models/js/table_side.js",
             "type": "1"
-        },
-        {
-            "name": "Poster",
-            "image": "models/thumbnails/poster.jpg",
-            "model": "models/js/poster.js",
-            "type": "2"
         },
         {
             "name": "Man",
@@ -153,6 +149,12 @@ $(document).ready(function () {
                    "type" : "1"
                  },
         */
+        {
+            "name": "Poster",
+            "image": "models/thumbnails/poster.jpg",
+            "model": "models/js/poster.js",
+            "type": "2"
+        },
         {
             "name": "Blue Rug",
             "image": "models/thumbnails/rug_blue.png",
