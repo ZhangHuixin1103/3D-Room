@@ -136,6 +136,25 @@ $(document).ready(function () {
             "model": "models/js/arr14.js",
             "type": "1"
         },
+
+        {
+            "name": "Round Table Set (2)",
+            "image": "models/thumbnails/rnd2.png",
+            "model": "models/js/rnd2.js",
+            "type": "1"
+        },
+        {
+            "name": "Round Table Set (4)",
+            "image": "models/thumbnails/rnd4.png",
+            "model": "models/js/rnd4.js",
+            "type": "1"
+        },
+        {
+            "name": "Round Table Set (8)",
+            "image": "models/thumbnails/rnd8.png",
+            "model": "models/js/rnd8.js",
+            "type": "1"
+        },
         {
             "name": "Square Table Set (2)",
             "image": "models/thumbnails/sq2.png",
@@ -154,14 +173,6 @@ $(document).ready(function () {
             "model": "models/js/sq8.js",
             "type": "1"
         },
-        /*        
-        {
-            "name" : "",
-            "image" : "models/thumbnails/",
-            "model" : "models/js/",
-            "type" : "1"
-        },
-        */
         {
             "name": "Camera",
             "image": "models/thumbnails/camera.png",
