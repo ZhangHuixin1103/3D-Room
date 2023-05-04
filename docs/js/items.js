@@ -119,12 +119,6 @@ $(document).ready(function () {
             "type": "1"
         },
         {
-            "name": "Camera",
-            "image": "models/thumbnails/camera.png",
-            "model": "models/js/camera.js",
-            "type": "1"
-        },
-        {
             "name": "Podium",
             "image": "models/thumbnails/podium.png",
             "model": "models/js/podium.js",
@@ -142,13 +136,38 @@ $(document).ready(function () {
             "model": "models/js/arr14.js",
             "type": "1"
         },
-        /*        {
-                   "name" : "",
-                   "image" : "models/thumbnails/",
-                   "model" : "models/json/",
-                   "type" : "1"
-                 },
+        {
+            "name": "Square Table Set (2)",
+            "image": "models/thumbnails/sq2.png",
+            "model": "models/js/sq2.js",
+            "type": "1"
+        },
+        {
+            "name": "Square Table Set (4)",
+            "image": "models/thumbnails/sq4.png",
+            "model": "models/js/sq4.js",
+            "type": "1"
+        },
+        {
+            "name": "Square Table Set (8)",
+            "image": "models/thumbnails/sq8.png",
+            "model": "models/js/sq8.js",
+            "type": "1"
+        },
+        /*        
+        {
+            "name" : "",
+            "image" : "models/thumbnails/",
+            "model" : "models/js/",
+            "type" : "1"
+        },
         */
+        {
+            "name": "Camera",
+            "image": "models/thumbnails/camera.png",
+            "model": "models/js/camera.js",
+            "type": "1"
+        },
         {
             "name": "Poster",
             "image": "models/thumbnails/poster.jpg",
